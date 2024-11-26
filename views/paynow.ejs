@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayNow Instructions</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(220, 220, 215);
+        }
+
+        .navbar {
+            background-color: rgb(28, 57, 152);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+        }
+
+        .option-button {
+            background-color: rgb(28, 57, 152);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            width: fit-content;
+            margin-bottom: 2rem;
+            grid-column: 1;
+            align-self: start;
+        }
+
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 2;
+        }
+
+        .qr-image {
+            width: 180px;
+            height: 180px;
+        }
+
+        .instructions {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: #333;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .step {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Cart</a>
+            <a href="#">Payment</a>
+        </div>
+        <a href="#" class="login-link">Login</a>
+    </nav>
+
+    <div class="main-container">
+        <button class="option-button">Option 3</button>
+        
+        <div class="qr-code">
+            <img src="qr.png" alt="PayNow QR Code" class="qr-image">
+        </div>
+
+        <div class="instructions">
+            <div class="step">1)Save the QR code.</div>
+            <div class="step">2)Upload the QR code in any PayNow supporting app to make payment. Ensure that recipient is Chip Company.</div>
+            <div class="step">3)You will receive a notification after payment is received by company. The transaction should be reflected in wallet transaction history.</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(220, 220, 215);
+        }
+
+        .navbar {
+            background-color: rgb(28, 57, 152);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .option-button {
+            background-color: rgb(28, 57, 152);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            margin-bottom: 1.5rem;
+            width: fit-content;
+            font-size: 1rem;
+        }
+
+        .form-section h2 {
+            color: #333;
+            font-weight: normal;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .card-form {
+            background: white;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-number-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .card-number {
+            flex-grow: 1;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .card-icons {
+            margin-left: 0.5rem;
+        }
+
+        .expiry-cvv-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .expiry-cvv-row input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .full-width-input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .country-select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            appearance: none;
+            background: white url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 0.5rem center;
+        }
+
+        .info-section {
+            padding-top: 2rem;
+        }
+
+        .info-text {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .card-image {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Cart</a>
+            <a href="#">Payment</a>
+        </div>
+        <a href="#" class="login-link">Login</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="form-section">
+            <button class="option-button">Option 1</button>
+            <h2>Card Information:</h2>
+            
+            <div class="card-form">
+                <div class="card-number-row">
+                    <input type="text" class="card-number" placeholder="1234 1234 1234 1234">
+                    <div class="card-icons">
+                        <img src="list.png" alt="Payment Cards">
+                    </div>
+                </div>
+                
+                <div class="expiry-cvv-row">
+                    <input type="text" placeholder="MM / YY">
+                    <input type="text" placeholder="CVC">
+                    <img src="cvv.png" alt="CVC Info">
+                </div>
+            </div>
+
+            <h2>Cardholder Name</h2>
+            <input type="text" class="full-width-input" placeholder="Full name on card">
+
+            <h2>Billing Address</h2>
+            <select class="country-select">
+                <option>Singapore</option>
+            </select>
+            <input type="text" class="full-width-input" placeholder="Address">
+        </div>
+
+        <div class="info-section">
+            <div class="info-text">Default $2 for transaction<br>fee from any country.</div>
+            <img src="visa.png" alt="DBS Card" class="card-image">
+        </div>
+    </div>
+</body>
+</html>

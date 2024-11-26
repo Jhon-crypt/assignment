@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(220, 220, 215);
+        }
+
+        .navbar {
+            background-color: rgb(28, 57, 152);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 3rem;
+        }
+
+        .chips-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            background-color: #deb8eb;
+        }
+
+        .content-text {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #333;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Cart</a>
+            <a href="#">Payment</a>
+        </div>
+        <a href="#" class="login-link">Login</a>
+    </nav>
+
+    <div class="main-content"> 
+        <img src="/images/img1.png" alt="Potato Chips" class="chips-image">
+        <p class="content-text">
+            Looking for cheap and delicious chips? You have come to the correct website.
+        </p>
+    </div>
+</body>
+</html>

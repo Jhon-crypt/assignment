@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wallet</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(220, 220, 215);
+        }
+
+        .navbar {
+            background-color: rgb(28, 57, 152);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .option-button {
+            background-color: rgb(28, 57, 152);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            width: fit-content;
+            margin-bottom: 1.5rem;
+        }
+
+        .wallet-title {
+            background-color: rgb(86, 182, 235);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            width: fit-content;
+            margin: 1.5rem auto;
+            font-size: 1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            margin: 0 auto;
+            border: 2px solid rgb(86, 182, 235);
+        }
+
+        .grid-item {
+            background-color: rgb(86, 182, 235);
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+            border: 1px solid black;
+            color: black;
+            height: 100px;
+        }
+
+        .grid-item.history {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Cart</a>
+            <a href="#">Payment</a>
+        </div>
+        <a href="#" class="login-link">Login</a>
+    </nav>
+
+    <div class="main-container">
+        <button class="option-button">Option 2</button>
+        
+        <div class="wallet-title">Digital Wallet</div>
+
+        <div class="grid-container">
+            <div class="grid-item">Add balance</div>
+            <div class="grid-item">Transfer</div>
+            <div class="grid-item history">Transaction<br>History</div>
+            <div class="grid-item">Link to bank</div>
+        </div>
+    </div>
+</body>
+</html>

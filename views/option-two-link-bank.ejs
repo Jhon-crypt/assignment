@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking Bank</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(220, 220, 215);
+        }
+
+        .navbar {
+            background-color: rgb(28, 57, 152);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .option-button {
+            background-color: rgb(28, 57, 152);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            width: fit-content;
+            margin-bottom: 2rem;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            color: #333;
+            text-align: center;
+            margin: 2rem 0;
+            grid-column: 1 / -1;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: auto 200px;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .form-label {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .form-input {
+            background-color: rgb(28, 57, 152);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .phone-preview {
+            width: 300px;
+            height: 600px;
+            border: 12px solid black;
+            border-radius: 40px;
+            position: relative;
+            background: white;
+            margin: 0 auto;
+        }
+
+        .phone-notch {
+            width: 150px;
+            height: 25px;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        .phone-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .company-logo {
+            font-size: 2rem;
+            color: #f4b63f;
+            margin-bottom: 2rem;
+        }
+
+        .bank-text {
+            color: #43a047;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        .chips-image {
+            width: 150px;
+            height: 150px;
+            margin: 1rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Cart</a>
+            <a href="#">Payment</a>
+        </div>
+        <a href="#" class="login-link">Login</a>
+    </nav>
+
+    <div class="main-container">
+        <h1 class="page-title">Linking Bank</h1>
+        
+        <div class="form-section">
+            <button class="option-button">Option 2</button>
+            
+            <div class="form-container">
+                <div class="form-label">Bank account</div>
+                <input type="text" class="form-input" value="123-12345-75" readonly>
+                
+                <div class="form-label">Link to wallet</div>
+                <input type="text" class="form-input" value="Yes" readonly>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="phone-preview">
+                <div class="phone-notch"></div>
+                <div class="phone-content">
+                    <div class="company-logo">CHIPS COMPANY</div>
+                    <div class="bank-text">
+                        Bank<br>
+                        successfully<br>
+                        link to wallet.
+                    </div>
+                    <div class="chips-image">
+                        <img src="/api/placeholder/150/150" alt="Chips">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

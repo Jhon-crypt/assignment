@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Products</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(220, 220, 215);
+        }
+
+        .navbar {
+            background-color: rgb(28, 57, 152);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .products-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .product-image {
+            width: 200px;
+            height: 250px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .button {
+            background-color: #666;
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 0.5rem;
+        }
+
+        .discount-text {
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 2rem;
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Cart</a>
+            <a href="#">Payment</a>
+        </div>
+        <a href="#" class="login-link">Login</a>
+    </nav>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="lays.png" alt="Lay's Classic" class="product-image">
+            <div class="price">$2.50</div>
+            <button class="button">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="copper.png" alt="Copper Kettle Sea Salt" class="product-image">
+            <div class="price">$3.00</div>
+            <button class="button">Add to cart</button>
+            <button class="button">Info</button>
+        </div>
+
+        <div class="product-card">
+            <img src="pringles.png" alt="Pringles Varieties" class="product-image">
+            <div class="price">$3.50</div>
+            <button class="button">Add to cart</button>
+        </div>
+
+        <div class="discount-text">
+            Buy any 2 to get<br>10% discount!
+        </div>
+    </div>
+</body>
+</html>
